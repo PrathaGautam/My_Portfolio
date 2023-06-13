@@ -68,3 +68,13 @@ def contact_page(request:Request):
 @app.get("/softskills")
 async def softskills(request: Request):
     return templates.TemplateResponse("softskills.html", {"request": request})
+
+@app.get("/portfolio")
+def redirect_to_portfolio():
+    github_link = "https://github.com/PrathaGautam/My_Portfolio"
+    return RedirectResponse(url=github_link)
+
+@app.get("/calculator")
+def redirect_to_calcu():
+    github_link = "https://github.com/PrathaGautam/Unusual_Calculator"
+    return RedirectResponse(url=github_link)
