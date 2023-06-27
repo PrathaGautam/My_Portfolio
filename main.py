@@ -78,3 +78,8 @@ def redirect_to_portfolio():
 def redirect_to_calcu():
     github_link = "https://github.com/PrathaGautam/Unusual_Calculator"
     return RedirectResponse(url=github_link)
+
+@app.get("/news")
+def redirect_to_news():
+    github_link = "https://github.com/PrathaGautam/NEWSconnect"
+    return RedirectResponse(url=github_link)
